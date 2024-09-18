@@ -71,6 +71,20 @@ nav ul li a:hover {
     color: #FF6B6B;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
 #hero {
     background: linear-gradient(rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8)), url('background.jpg') no-repeat center center/cover;
     height: 100vh;
@@ -181,24 +195,29 @@ footer {
     padding: 2rem 0;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-    }
-    
     nav ul {
-        margin-top: 1rem;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #0f2027;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
     }
-    
+
+    nav ul.nav-active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
     nav ul li {
-        margin: 0 1rem;
-    }
-    
-    #hero h2 {
-        font-size: 2rem;
-    }
-    
-    #hero p {
-        font-size: 1rem;
+        margin: 15px 0;
     }
 }

@@ -1,4 +1,6 @@
-// For future JavaScript functionality like interactive features or animations
-document.addEventListener('DOMContentLoaded', function () {
-    console.log("Website Loaded!");
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
 });
