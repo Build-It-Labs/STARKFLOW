@@ -134,7 +134,7 @@ h2 {
     text-align: center;
 }
 
-#about p, #technology p {
+#about p, #Nft p {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -179,7 +179,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-#technology {
+#Nft {
     background-color: #0f2027;
     color: #fff;
 }
